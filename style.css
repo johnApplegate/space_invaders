@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.grid{
+    width: 300px;
+    height: 300px;
+    border: solid black 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;  
+}
+
+.invader {
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.shooter {
+    background-color: green;
+}
+
+.laser {
+    background-color: orange;
+}
+
+.boom {
+    background-color: red ;
+}
+
+.alien-laser {
+    background-color: yellow;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .grid{
+        width: 240px;
+        height: 240px;
+    }    
+    .grid div {
+        width: 16px;
+        height: 16px;  
+    }
+    .invader {
+        border-radius: 8px;
+    }  
+}
+
+@media only screen and (min-width: 600px) {
+    .grid{
+        width: 300px;
+        height: 300px;
+    }
+    .grid div {
+        width: 20px;
+        height: 20px;  
+    }  
+    .invader {
+        border-radius: 10px;
+    }  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .grid{
+        width: 450px;
+        height: 450px;
+    }    
+    .grid div {
+        width: 30px;
+        height: 30px;  
+    }
+    .invader {
+        border-radius: 15px;
+    }  
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .grid{
+        width: 600px;
+        height: 600px;
+    }    
+    .grid div {
+        width: 40px;
+        height: 40px;  
+    }
+    .invader {
+        border-radius: 20px;
+    }  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...} */
+
+
