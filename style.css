@@ -1,14 +1,23 @@
+@import url('https://fonts.cdnfonts.com/css/arcade');
+/* 
+font-family: 'Arcade Interlaced', sans-serif;
+font-family: 'Arcade Normal', sans-serif;
+font-family: 'Arcade Rounded', sans-serif; */
+
+
 body {
     margin: 0;
+    background-color: rgb(48, 48, 90);
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-
+    font-family: 'Arcade Interlaced', sans-serif
 }
 
 .grid{
+    background-image: url('/images/background-blue.png');
     width: 300px;
     height: 300px;
     border: solid black 2px;
@@ -21,17 +30,43 @@ body {
     height: 20px;  
 }
 
+.title {
+    color: rgb(232, 195, 7);
+    font-size: 80px;
+}
+
+.results{
+    color: rgb(242, 10, 10); 
+    font-size: 30px;
+    margin: 20px;
+}
+
 .invader {
-    background-color: purple;
-    border-radius: 10px;
+    background-image: url('images/invader.png');
+    background-size: contain; /* Adjust this property as needed */
+    background-repeat: no-repeat;
+    width: 100%; /* Set the width to 100% to ensure the entire element is covered by the image */
+    height: 100%; /* Set the height to 100% to ensure the entire element is covered by the image */
+    
 }
 
 .shooter {
-    background-color: green;
+    background-image: url('images/spaceship.png');
+    background-size: contain; /* Adjust this property as needed */
+    background-repeat: no-repeat;
+    width: 100%; /* Set the width to 100% to ensure the entire element is covered by the image */
+    height: 100%; /* Set the height to 100% to ensure the entire element is covered by the image */
+    /* Any other styles you want to apply to the shooter element */
 }
 
+
 .laser {
-    background-color: orange;
+    background-image: url('images/laser.png');
+    background-size: contain; /* Adjust this property as needed */
+    background-repeat: no-repeat;
+    width: 100%; /* Set the width to 100% to ensure the entire element is covered by the image */
+    height: 100%; /* Set the height to 100% to ensure the entire element is covered by the image */
+    
 }
 
 .boom {
