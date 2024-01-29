@@ -7,7 +7,7 @@ font-family: 'Arcade Rounded', sans-serif; */
 
 body {
     margin: 0;
-    background-color: rgb(48, 48, 90);
+    background-color: rgb(72, 72, 122);
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -18,26 +18,27 @@ body {
 
 .grid{
     background-image: url('/images/background-blue.png');
-    width: 300px;
-    height: 300px;
+    width: 240px;
+    height: 240px;
     border: solid black 2px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .grid div {
-    width: 20px;
-    height: 20px;  
+    width: 16px;
+    height: 16px;  
 }
 
-.title {
+.flow-text{
     color: rgb(232, 195, 7);
-    font-size: 80px;
+    font-size: 25px;
+    align-items: center;
 }
 
 .results{
     color: rgb(242, 10, 10); 
-    font-size: 30px;
+    font-size: 15px;
     margin: 20px;
 }
 
@@ -77,9 +78,9 @@ body {
     background-color: yellow;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .grid{
+/* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) { */
+    /* .grid{
         width: 240px;
         height: 240px;
     }    
@@ -89,8 +90,8 @@ body {
     }
     .invader {
         border-radius: 8px;
-    }  
-}
+    }   */
+/* } */
 
 @media only screen and (min-width: 600px) {
     .grid{
@@ -101,9 +102,12 @@ body {
         width: 20px;
         height: 20px;  
     }  
-    .invader {
-        border-radius: 10px;
-    }  
+    .flow-text {
+        font-size: 40px;
+    }
+    .results {
+        font-size: 30px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -116,9 +120,12 @@ body {
         width: 30px;
         height: 30px;  
     }
-    .invader {
-        border-radius: 15px;
-    }  
+    .flow-text {
+        font-size: 50px;
+    }
+    .results {
+        font-size: 35px;
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -131,9 +138,12 @@ body {
         width: 40px;
         height: 40px;  
     }
-    .invader {
-        border-radius: 20px;
-    }  
+    .flow-text {
+        font-size: 70px;
+    }
+    .results {
+        font-size: 50px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up)

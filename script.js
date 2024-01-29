@@ -1,14 +1,14 @@
-let gameRunning = false; // Flag to track the game state
+// let gameRunning = false; // Flag to track the game state
 
-const resultsDisplay = document.querySelector('.results');
-resultsDisplay.innerText = 'Hit any key to start';
+// const resultsDisplay = document.querySelector('.results');
+// resultsDisplay.innerText = 'Hit any key to start';
 
-function playGame() {
-    if (gameRunning) {
-        return; // If a game is already running, do nothing
-    }
+// function playGame() {
+//     if (gameRunning) {
+//         return; // If a game is already running, do nothing
+//     }
 
-    gameRunning = true; // Set the flag to indicate that a new game is starting
+//     gameRunning = true; // Set the flag to indicate that a new game is starting
 
 
     const grid = document.querySelector('.grid')
@@ -108,12 +108,14 @@ function playGame() {
         draw()
 
         if (squares[currentShooterIndex].classList.contains('invader', 'shooter' )) {
-                resultsDisplay.innerText = 'GAME OVER!'
-                clearInterval(invadersId)
+            // let gameRunning = false;
+            resultsDisplay.innerText = 'GAME OVER!'
+            clearInterval(invadersId)
         }
 
         for (let i = 0; i < alienInvaders.length; i++) { 
-            if (alienInvaders[i] > (squares.length)) {
+            if (alienInvaders[i] >= (squares.length)) {
+            // let gameRunning = false;
             resultsDisplay.innerHTML = 'GAME OVER!'
             clearInterval(invadersId)
         }        
@@ -168,7 +170,7 @@ function playGame() {
     }
 
     document.addEventListener('keydown', shoot)
-}
+// }
 
 
-document.addEventListener('keydown', playGame);
+// document.addEventListener('keydown', playGame);
