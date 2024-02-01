@@ -6,18 +6,19 @@ font-family: 'Arcade Rounded', sans-serif; */
 
 
 body {
+    border: solid rgb(0, 183, 255) 10px;
     margin: 0;
-    background-color: rgb(72, 72, 122);
+    background-color: rgb(41, 41, 58);
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 98vh;
     font-family: 'Arcade Interlaced', sans-serif
 }
 
 .grid{
-    background-image: url('/images/background-blue.png');
+    background-image: url('images/background-blue.png');
     width: 240px;
     height: 240px;
     border: solid black 2px;
@@ -32,8 +33,9 @@ body {
 
 .flow-text{
     color: rgb(232, 195, 7);
-    font-size: 25px;
+    font-size: 24px;
     align-items: center;
+    justify-items: center;
 }
 
 .results{

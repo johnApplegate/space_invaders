@@ -165,7 +165,7 @@
         // console.log('Top' + currentLaserIndex)
         switch(e.key){
             case 'ArrowUp':
-                laserId = setInterval(moveLaser, 100)
+                laserId = setInterval(moveLaser, 300)
         }
     }
 
