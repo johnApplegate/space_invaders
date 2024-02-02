@@ -114,7 +114,7 @@
         }
 
         for (let i = 0; i < alienInvaders.length; i++) { 
-            if (alienInvaders[i] >= (squares.length)) {
+            if (alienInvaders[i] > (squares.length)) {
             // let gameRunning = false;
             resultsDisplay.innerHTML = 'GAME OVER!'
             clearInterval(invadersId)
@@ -126,7 +126,7 @@
         }
     } 
 
-    invadersId = setInterval(moveInvaders, 100) 
+    invadersId = setInterval(moveInvaders, 150) 
 
     function shoot(e) {
         let laserId

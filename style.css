@@ -6,6 +6,7 @@ font-family: 'Arcade Rounded', sans-serif; */
 
 
 body {
+    z-index: 1;
     border: solid rgb(0, 183, 255) 10px;
     margin: 0;
     background-color: rgb(41, 41, 58);
