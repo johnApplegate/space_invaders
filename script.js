@@ -1,15 +1,3 @@
-// let gameRunning = false; // Flag to track the game state
-
-// const resultsDisplay = document.querySelector('.results');
-// resultsDisplay.innerText = 'Hit any key to start';
-
-// function playGame() {
-//     if (gameRunning) {
-//         return; // If a game is already running, do nothing
-//     }
-
-//     gameRunning = true; // Set the flag to indicate that a new game is starting
-
 
     const grid = document.querySelector('.grid')
     const resultsDisplay = document.querySelector('.results')
@@ -40,17 +28,16 @@
     ]
 
     function draw() {
-        // i < 40
         for (let i = 0; i < alienInvaders.length; i++) {
             if(!aliensRemoved.includes(i)){
-                // Add the class invader to every invador div. 
+                // Add the class invader to every invader div. 
                 // Could be done as part of the loop mentioned in the comment above.
                 squares[alienInvaders[i]].classList.add('invader')
             }
         }
     } 
 
-    // Instantiating the draw() function above.
+    // call the draw() function above.
     draw()
 
     // Function to remove an alienInvader
@@ -109,24 +96,25 @@
 
         if (squares[currentShooterIndex].classList.contains('invader', 'shooter' )) {
             // let gameRunning = false;
-            resultsDisplay.innerText = 'GAME OVER!'
+            resultsDisplay.innerHTML = 'GAME OVER!'
             clearInterval(invadersId)
         }
 
         for (let i = 0; i < alienInvaders.length; i++) { 
-            if (alienInvaders[i] > (squares.length)) {
+            if (alienInvaders[i] >= 210) {
             // let gameRunning = false;
             resultsDisplay.innerHTML = 'GAME OVER!'
             clearInterval(invadersId)
         }        
         } 
-        if(aliensRemoved.length === alienInvaders.length) {
+
+        if (aliensRemoved.length === alienInvaders.length) {
             resultsDisplay.innerHTML = 'YOU WIN! '
             clearInterval(invadersId)
         }
     } 
 
-    invadersId = setInterval(moveInvaders, 150) 
+    invadersId = setInterval(moveInvaders, 300) 
 
     function shoot(e) {
         let laserId
@@ -162,7 +150,7 @@
                 } 
             
         }
-        // console.log('Top' + currentLaserIndex)
+
         switch(e.key){
             case 'ArrowUp':
                 laserId = setInterval(moveLaser, 300)
@@ -170,7 +158,6 @@
     }
 
     document.addEventListener('keydown', shoot)
-// }
 
 
-// document.addEventListener('keydown', playGame);
+

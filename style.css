@@ -9,12 +9,12 @@ body {
     z-index: 1;
     border: solid rgb(0, 183, 255) 10px;
     margin: 0;
-    background-color: rgb(41, 41, 58);
+    background-color: rgb(78, 78, 97);
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 98vh;
+    height: 100vh;
     font-family: 'Arcade Interlaced', sans-serif
 }
 
@@ -22,7 +22,7 @@ body {
     background-image: url('images/background-blue.png');
     width: 240px;
     height: 240px;
-    border: solid black 2px;
+    border: solid rgb(0, 183, 255) 2px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .results{
-    color: rgb(242, 10, 10); 
+    color: red; 
     font-size: 15px;
     margin: 20px;
 }
