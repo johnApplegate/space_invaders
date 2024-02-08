@@ -7,29 +7,28 @@ font-family: 'Arcade Rounded', sans-serif; */
 
 body {
     z-index: 1;
-    border: solid rgb(0, 183, 255) 10px;
     margin: 0;
-    background-color: rgb(78, 78, 97);
+    background-color: rgb(102, 102, 126);
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 98vh;
     font-family: 'Arcade Interlaced', sans-serif
 }
 
 .grid{
-    background-image: url('images/background-blue.png');
-    width: 240px;
-    height: 240px;
-    border: solid rgb(0, 183, 255) 2px;
+    background-image: url('/movieWorld/cosmos.png');
+    width: 300px;
+    height: 300px;
+    border: solid rgb(0, 183, 255) 3px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .grid div {
-    width: 16px;
-    height: 16px;  
+    width: 20px;
+    height: 20px;  
 }
 
 .flow-text{
@@ -46,7 +45,7 @@ body {
 }
 
 .invader {
-    background-image: url('images/invader.png');
+    background-image: url('images/kisspng-space-invader.png');
     background-size: contain; /* Adjust this property as needed */
     background-repeat: no-repeat;
     width: 100%; /* Set the width to 100% to ensure the entire element is covered by the image */
@@ -81,30 +80,16 @@ body {
     background-color: yellow;
 }
 
-/* Extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) { */
-    /* .grid{
-        width: 240px;
-        height: 240px;
-    }    
-    .grid div {
-        width: 16px;
-        height: 16px;  
-    }
-    .invader {
-        border-radius: 8px;
-    }   */
-/* } */
 
 @media only screen and (min-width: 600px) {
     .grid{
-        width: 300px;
-        height: 300px;
-    }
+        width: 450px;
+        height: 450px;
+    }    
     .grid div {
-        width: 20px;
-        height: 20px;  
-    }  
+        width: 30px;
+        height: 30px;  
+    }
     .flow-text {
         font-size: 40px;
     }
@@ -116,13 +101,14 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .grid{
-        width: 450px;
-        height: 450px;
+        width: 600px;
+        height: 600px;
     }    
     .grid div {
-        width: 30px;
-        height: 30px;  
+        width: 40px;
+        height: 40px;  
     }
+
     .flow-text {
         font-size: 50px;
     }
